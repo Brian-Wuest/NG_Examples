@@ -1,1 +1,66 @@
-/* You can add global styles to this file, and also import other style files */
+@import './assets/theme-dark.css';
+@import './assets/layout-dark.css';
+
+body {
+  .ui-spinner.ui-widget.ui-corner-all {
+    width: 100%;
+  }
+
+  p-spinner {
+    padding: 0px !important;
+  }
+
+  .ui-spinner-input {
+    width: 100%;
+  }
+
+  .ui-dropdown {
+    min-width: 100%;
+    min-height: 33px;
+    max-height: 33px;
+    &::before {
+      display: inline;
+    }
+
+    .ui-dropdown-label {
+      padding-bottom: 0px;
+      padding-top: 6px;
+      min-height: 31px;
+    }
+  }
+
+  .ui-card-header {
+    text-align: center;
+  }
+
+  p {
+    margin-block-end: 0.1em;
+    margin-block-start: 0.1em;
+  }
+
+  h5 {
+    margin-block-start: 1.2em;
+    margin-block-end: 1.2em;
+  }
+
+  .ui-panel-content {
+    a {
+      color: #9593ff;
+
+      &:hover {
+        color: #716ff0;
+      }
+    }
+  }
+
+  .align-text-center {
+    text-align: center;
+  }
+
+  .ui-inputgroup-addon {
+    .ui-dropdown {
+      border-width: 0px;
+      min-height: 31px;
+    }
+  }
+}

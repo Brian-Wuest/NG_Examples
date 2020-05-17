@@ -27,7 +27,7 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
+            "styles": ["node_modules/primeng/resources/primeng.min.css", "node_modules/primeicons/primeicons.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -71,6 +71,9 @@
           "configurations": {
             "production": {
               "browserTarget": "angular-examples:build:production"
+            },
+            "dev": {
+              "browserTarget": "angular-examples:build"
             }
           }
         },
