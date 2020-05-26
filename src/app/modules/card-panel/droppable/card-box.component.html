@@ -1,0 +1,14 @@
+<div
+  class="cardbox p-grid"
+  pDroppable="card-panel"
+  [ngClass]="{ accept: acceptsMovingNode }"
+  (onDragEnter)="enteredContainer($event)"
+  (onDragLeave)="leftContainer($event)"
+  (onDrop)="dropped($event)"
+>
+  <app-configure-card
+    *ngFor="let node of nodes"
+    [node]="node"
+    class="p-col-4"
+  ></app-configure-card>
+</div>

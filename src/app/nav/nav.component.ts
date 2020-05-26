@@ -19,6 +19,15 @@ export class NavComponent implements OnInit {
         icon: 'pi pi-home',
       },
       {
+        label: 'Examples',
+        items: [
+          {
+            label: 'Card Panel',
+            routerLink: 'card-panel'
+          }
+        ]
+      },
+      {
         label: 'About',
         routerLink: 'about',
         icon: 'pi pi-info-circle',

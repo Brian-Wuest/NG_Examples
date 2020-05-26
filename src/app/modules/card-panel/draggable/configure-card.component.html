@@ -1,0 +1,19 @@
+<div
+  pDraggable="card-panel"
+  dragHandle=".panel-drag-handle"
+  (onDragStart)="dragStart()"
+  (onDragEnd)="dragEnd()"
+  (dragenter)="siblingEntered()"
+  (dragleave)="siblingLeft()"
+>
+  <p-panel [toggleable]="true" [ngClass]="{ 'hidden-header': showHeader(), 'hidden-footer': showFooter() }">
+    <p-header>
+      <ng-template #headerComponent></ng-template>
+      <i class="pi pi-ellipsis-v panel-drag-handle"></i>
+    </p-header>
+    <ng-template #bodyComponent></ng-template>
+    <p-footer>
+      <ng-template #footerComponent></ng-template>
+    </p-footer>
+  </p-panel>
+</div>

@@ -1,0 +1,36 @@
+.ui-card.detached {
+  opacity: 0.4;
+  border: 1px dashed #ddd;
+}
+
+.ui-card i.pi {
+  display: inline-block;
+  font-size: 300%;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+p-panel {
+  &.hidden-footer {
+    div.ui-panel-footer.ui-widget-content {
+      display: none;
+    }
+  }
+
+  &.hidden-header {
+    .ui-panel-titlebar {
+      display: none;
+    }
+  }
+}
+
+.panel-drag-handle {
+  display: inline-flex;
+  float: right;
+  color: inherit;
+  margin-top: 3px;
+  &:hover {
+    color: inherit;
+    cursor: move;
+  }
+}
