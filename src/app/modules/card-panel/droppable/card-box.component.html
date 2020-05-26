@@ -9,6 +9,6 @@
   <app-configure-card
     *ngFor="let node of nodes"
     [node]="node"
-    class="p-col-4"
+    [ngClass]="node.nodeWidth"
   ></app-configure-card>
 </div>

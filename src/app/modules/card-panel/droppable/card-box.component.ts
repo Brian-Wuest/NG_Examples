@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
-import { DraggableNode } from '../draggable/DraggableNode';
+import { DraggableNode } from '../draggable/draggable-node';
 import { SharedDraggableContext } from '../draggable/shared-draggable-context';
 
 @Component({

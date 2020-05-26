@@ -4,7 +4,7 @@ import { ComponentInput } from '../component-loader/component-input';
 import { ComponentLoaderFactory } from '../component-loader/component-loader.factory';
 import { ComponentLoaderService } from '../component-loader/component-loader.service';
 import { ComponentType } from '../component-loader/component-type';
-import { DraggableNode } from './DraggableNode';
+import { DraggableNode } from './draggable-node';
 import { SharedDraggableContext } from './shared-draggable-context';
 
 /**

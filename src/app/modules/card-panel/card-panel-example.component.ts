@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import {
   DraggableNode,
-} from './draggable/DraggableNode';
+} from './draggable/draggable-node';
 import { StandardComponentTypes } from './component-loader/standard-components/standard-types';
 import { SharedDraggableContext } from './draggable/shared-draggable-context';
+import { NodeWidth } from './draggable/node-width';
 
 @Component({
   templateUrl: './card-panel-example.component.html',
@@ -34,6 +35,8 @@ export class CardPanelExampleComponent {
         value: 'This is the body text of the first node',
       },
     ];
+
+    seed.nodeColumnWidth = NodeWidth.Eight;
 
     seedData.push(seed);
 

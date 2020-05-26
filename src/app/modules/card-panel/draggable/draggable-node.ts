@@ -1,5 +1,6 @@
 import { ComponentInput } from '../component-loader/component-input';
 import { SharedDraggableContext } from './shared-draggable-context';
+import { NodeWidth } from './node-width';
 
 export class DraggableNode {
   inMotion = false;
@@ -11,6 +12,17 @@ export class DraggableNode {
   bodyComponentInputs: Array<ComponentInput>;
   footerComponentName: string;
   footerComponentInputs: Array<ComponentInput>;
+  private nodeWidth: NodeWidth = NodeWidth.Four;
+
+  get nodeColumnWidth(): NodeWidth {
+    return !this.nodeWidth ? NodeWidth.Four : this.nodeWidth;
+  }
+
+  set nodeColumnWidth(width: NodeWidth) {
+    if (width) {
+      this.nodeWidth = width;
+    }
+  }
 
   constructor(public parentContext: SharedDraggableContext) {
     parentContext.monitoredNodes.push(this);

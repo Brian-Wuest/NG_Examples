@@ -1,4 +1,4 @@
-import { DraggableNode } from './DraggableNode';
+import { DraggableNode } from './draggable-node';
 
 export class SharedDraggableContext {
   monitoredNodes: Array<DraggableNode>;

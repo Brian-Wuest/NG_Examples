@@ -1,4 +1,4 @@
-import { DraggableNode } from './DraggableNode';
+import { DraggableNode } from './draggable-node';
 import { SharedDraggableContext } from './shared-draggable-context';
 
 export interface NodeChange {
