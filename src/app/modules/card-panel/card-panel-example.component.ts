@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import {
   DraggableNode,
-} from './draggable/draggable-node';
+} from './node-info/draggable-node';
 import { StandardComponentTypes } from './component-loader/standard-components/standard-types';
-import { SharedDraggableContext } from './draggable/shared-draggable-context';
-import { NodeWidth } from './draggable/node-width';
+import { SharedDraggableContext } from './node-info/shared-draggable-context';
+import { NodeWidth } from './node-info/node-width';
 
 @Component({
   templateUrl: './card-panel-example.component.html',

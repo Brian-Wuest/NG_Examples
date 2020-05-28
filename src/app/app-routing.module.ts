@@ -15,8 +15,8 @@ const routes: Routes = [
   {
     path: 'card-panel',
     loadChildren: () =>
-      import('./modules/card-panel/card-panel.module').then(
-        (m) => m.CardPanelModule
+      import('./modules/card-panel/card-panel-example.module').then(
+        (m) => m.CardPanelExampleModule
       ),
   },
   {

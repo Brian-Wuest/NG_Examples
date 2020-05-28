@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
-import { DraggableNode } from '../draggable/draggable-node';
-import { SharedDraggableContext } from '../draggable/shared-draggable-context';
+import { DraggableNode } from '../node-info/draggable-node';
+import { SharedDraggableContext } from '../node-info/shared-draggable-context';
 
 @Component({
   selector: 'app-card-box',
