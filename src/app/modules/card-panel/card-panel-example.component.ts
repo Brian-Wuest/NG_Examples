@@ -36,6 +36,7 @@ export class CardPanelExampleComponent {
       },
     ];
 
+    seed.allowCollapse = false;
     seed.nodeColumnWidth = NodeWidth.Eight;
 
     seedData.push(seed);

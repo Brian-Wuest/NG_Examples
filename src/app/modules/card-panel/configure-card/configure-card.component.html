@@ -6,7 +6,7 @@
   (dragenter)="siblingEntered()"
   (dragleave)="siblingLeft()"
 >
-  <p-panel [toggleable]="true" [ngClass]="{ 'hidden-header': showHeader(), 'hidden-footer': showFooter() }">
+  <p-panel [toggleable]="getToggleable()" [ngClass]="{ 'hidden-header': showHeader(), 'hidden-footer': showFooter() }">
     <p-header>
       <ng-template #headerComponent></ng-template>
       <i *ngIf="dragDropAllowed()" class="pi pi-ellipsis-v panel-drag-handle"></i>

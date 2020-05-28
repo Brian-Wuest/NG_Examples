@@ -13,7 +13,11 @@ export class DraggableNode {
   footerComponentName: string;
   footerComponentInputs: Array<ComponentInput>;
   private nodeWidth: NodeWidth = NodeWidth.Four;
+  private toggleable = true;
 
+  /**
+   * Gets or sets the column width of this node By default the value is Four.
+   */
   get nodeColumnWidth(): NodeWidth {
     return !this.nodeWidth ? NodeWidth.Four : this.nodeWidth;
   }
@@ -22,6 +26,17 @@ export class DraggableNode {
     if (width) {
       this.nodeWidth = width;
     }
+  }
+
+  /**
+   * Gets or sets a value indicating whether the card header can expanded and collapsed.
+   */
+  get allowCollapse(): boolean {
+    return this.toggleable;
+  }
+
+  set allowCollapse(value: boolean) {
+    this.toggleable = value === null || value === undefined ? false : value;
   }
 
   constructor(public parentContext: SharedDraggableContext) {

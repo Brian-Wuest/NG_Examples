@@ -149,4 +149,8 @@ export class ConfigureCardComponent implements OnInit, AfterViewInit {
   dragDropAllowed() {
     return this.node.parentContext.allowDragDrop;
   }
+
+  getToggleable() {
+    return this.node.allowCollapse;
+  }
 }
