@@ -9,7 +9,7 @@
   <p-panel [toggleable]="true" [ngClass]="{ 'hidden-header': showHeader(), 'hidden-footer': showFooter() }">
     <p-header>
       <ng-template #headerComponent></ng-template>
-      <i class="pi pi-ellipsis-v panel-drag-handle"></i>
+      <i *ngIf="dragDropAllowed()" class="pi pi-ellipsis-v panel-drag-handle"></i>
     </p-header>
     <ng-template #bodyComponent></ng-template>
     <p-footer>

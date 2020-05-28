@@ -145,4 +145,8 @@ export class ConfigureCardComponent implements OnInit, AfterViewInit {
   showHeader() {
     return this.hasHeader === null || this.hasHeader === undefined ? true : !this.hasHeader;
   }
+
+  dragDropAllowed() {
+    return !this.node.parentContext.allowDragDrop;
+  }
 }

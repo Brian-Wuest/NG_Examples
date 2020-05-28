@@ -3,6 +3,25 @@ import { DraggableNode } from './draggable-node';
 export class SharedDraggableContext {
   monitoredNodes: Array<DraggableNode>;
   movingNode: DraggableNode;
+  private dragDropAllowed = true;
+
+  /**
+   * Gets a value indicating whether drag and drop is allowed for the attached card-box.
+   */
+  get allowDragDrop(): boolean {
+    return this.dragDropAllowed;
+  }
+
+  /**
+   * Sets a value indicating whether drag and drop is allowed for the attached card-box.
+   */
+  set allowDragDrop(value: boolean) {
+    if (value === null || value === undefined) {
+      value = false;
+    }
+
+    this.dragDropAllowed = value;
+  }
 
   // tslint:disable-next-line: ban-types
   listeners: Function[] = [];
