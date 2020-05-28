@@ -147,6 +147,6 @@ export class ConfigureCardComponent implements OnInit, AfterViewInit {
   }
 
   dragDropAllowed() {
-    return !this.node.parentContext.allowDragDrop;
+    return this.node.parentContext.allowDragDrop;
   }
 }
