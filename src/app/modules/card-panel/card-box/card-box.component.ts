@@ -48,12 +48,6 @@ export class CardBoxComponent implements OnInit {
   leftContainer(event: Event) {}
 
   dropped(event: Event) {
-    const movingNode = this.sharedContext.getMovingNode();
-
-    movingNode.attach(movingNode.tempNewPos);
-
-    movingNode.tempNewPos = -1;
-
     // We already update sharedContext state from the node's dragEnd() event, but
     // occasionally dragEnd isn't called, depending on the exact timing of the drop event
     // and where it gets dropped in the list. So we go ahead and safeguard against bad
