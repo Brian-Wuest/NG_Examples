@@ -1,5 +1,5 @@
-@import './assets/theme-dark.css';
-@import './assets/layout-dark.css';
+@import "./assets/theme-dark.css";
+@import "./assets/layout-dark.css";
 
 body {
   .ui-spinner.ui-widget.ui-corner-all {
@@ -26,6 +26,28 @@ body {
       padding-bottom: 0px;
       padding-top: 6px;
       min-height: 31px;
+    }
+  }
+
+  .ui-fluid {
+    .ui-inputtext {
+      width: 100%;
+    }
+  }
+
+  .ui-inputnumber,
+  .ui-calendar {
+    width: 100%;
+    min-height: 33px;
+
+    .ui-datepicker {
+      width: 100%;
+    }
+  }
+
+  .ui-calendar-w-btn {
+    input.ui-inputtext {
+      width: calc(100% - 2.357em);
     }
   }
 
