@@ -1,11 +1,4 @@
-<div
-  pDraggable="card-panel"
-  dragHandle=".panel-drag-handle"
-  (onDragStart)="dragStart()"
-  (onDragEnd)="dragEnd()"
-  (dragenter)="siblingEntered()"
-  (dragleave)="siblingLeft()"
->
+<div pDraggable="card-panel" dragHandle=".panel-drag-handle" (onDragStart)="dragStart($event)" (onDragEnd)="dragEnd()" (dragenter)="siblingEntered()" (dragleave)="siblingLeft()">
   <p-panel [toggleable]="getToggleable()" [ngClass]="{ 'hidden-header': showHeader(), 'hidden-footer': showFooter() }">
     <p-header>
       <ng-template #headerComponent></ng-template>

@@ -1,0 +1,28 @@
+{
+  "eol": "\n",
+  "brace_style": "collapse,preserve-inline",
+  "break_chained_methods": false,
+  "comma_first": false,
+  "end_with_newline": true,
+  "extra_liners": [
+    "head",
+    "body",
+    "/html"
+  ],
+  "indent_body_inner_html": true,
+  "indent_char": " ",
+  "indent_empty_lines": false,
+  "indent_head_inner_html": true,
+  "indent_inner_html": true,
+  "indent_level": 0,
+  "indent_size": 2,
+  "indent_with_tabs": false,
+  "wrap_line_length": 160,
+  "operator_position": "after-newline",
+  "newline_between_rules": false,
+  "space_in_paren": false,
+  "space_in_empty_paren": false,
+  "wrap_attributes": "align-multiple",
+  "space_after_named_function": true,
+  "indent_scripts": "normal"
+}

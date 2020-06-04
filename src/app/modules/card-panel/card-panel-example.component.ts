@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import {
-  DraggableNode,
-} from './node-info/draggable-node';
+import { DraggableNode } from './node-info/draggable-node';
 import { StandardComponentTypes } from './component-loader/standard-components/standard-types';
 import { SharedDraggableContext } from './node-info/shared-draggable-context';
 import { NodeWidth } from './node-info/node-width';
@@ -25,9 +23,7 @@ export class CardPanelExampleComponent {
     let seed = new DraggableNode(this.sharedContext);
 
     seed.headerComponentName = StandardComponentTypes.TextHeader;
-    seed.headerComponentInputs = [
-      { name: 'textToShow', value: 'This is the first node.' },
-    ];
+    seed.headerComponentInputs = [{ name: 'textToShow', value: 'This is the first node.' }];
     seed.bodyComponentName = StandardComponentTypes.TextBody;
     seed.bodyComponentInputs = [
       {
@@ -44,9 +40,7 @@ export class CardPanelExampleComponent {
     seed = new DraggableNode(this.sharedContext);
 
     seed.headerComponentName = StandardComponentTypes.TextHeader;
-    seed.headerComponentInputs = [
-      { name: 'textToShow', value: 'This is the second node.' },
-    ];
+    seed.headerComponentInputs = [{ name: 'textToShow', value: 'This is the second node.' }];
     seed.bodyComponentName = StandardComponentTypes.TextBody;
     seed.bodyComponentInputs = [
       {
@@ -60,9 +54,7 @@ export class CardPanelExampleComponent {
     seed = new DraggableNode(this.sharedContext);
 
     seed.headerComponentName = StandardComponentTypes.TextHeader;
-    seed.headerComponentInputs = [
-      { name: 'textToShow', value: 'This is the third node.' },
-    ];
+    seed.headerComponentInputs = [{ name: 'textToShow', value: 'This is the third node.' }];
     seed.bodyComponentName = StandardComponentTypes.TextBody;
     seed.bodyComponentInputs = [
       {
@@ -76,9 +68,7 @@ export class CardPanelExampleComponent {
     seed = new DraggableNode(this.sharedContext);
 
     seed.headerComponentName = StandardComponentTypes.TextHeader;
-    seed.headerComponentInputs = [
-      { name: 'textToShow', value: 'This is the fourth node.' },
-    ];
+    seed.headerComponentInputs = [{ name: 'textToShow', value: 'This is the fourth node.' }];
     seed.bodyComponentName = StandardComponentTypes.TextBody;
     seed.bodyComponentInputs = [
       {
