@@ -3,7 +3,6 @@
   "typescript.preferences.quoteStyle": "single",
   "editor.minimap.maxColumn": 160,
   "editor.wordWrapColumn": 160,
-  "editor.defaultFormatter": "HookyQR.beautify",
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.detectIndentation": false,
@@ -13,7 +12,6 @@
       "comments": false,
       "strings": true
     },
-    "editor.defaultFormatter": "HookyQR.beautify",
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"

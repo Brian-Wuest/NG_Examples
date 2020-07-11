@@ -4,20 +4,19 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: 'about',
-    loadChildren: () =>
-      import('./modules/about/about.module').then((m) => m.AboutModule),
+    loadChildren: () => import('./modules/about/about.module').then(m => m.AboutModule),
   },
   {
     path: 'welcome',
-    loadChildren: () =>
-      import('./modules/welcome/welcome.module').then((m) => m.WelcomeModule),
+    loadChildren: () => import('./modules/welcome/welcome.module').then(m => m.WelcomeModule),
   },
   {
     path: 'card-panel',
-    loadChildren: () =>
-      import('./modules/card-panel/card-panel-example.module').then(
-        (m) => m.CardPanelExampleModule
-      ),
+    loadChildren: () => import('./modules/card-panel/card-panel-example.module').then(m => m.CardPanelExampleModule),
+  },
+  {
+    path: 'calendar-example',
+    loadChildren: () => import('./modules/calendar-example/calendar-example.module').then(m => m.CalendarExampleModule),
   },
   {
     path: '',

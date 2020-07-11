@@ -1,0 +1,30 @@
+<div class="ui-g">
+  <div class="ui-g-10 ui-g-offset-1 ui-g-md-4 ui-g-offset-md-1">
+    <p-card>
+      <p-header>
+        <div class="ui-g">
+          <div class="ui-g-12">
+            <span class="ui-card-title"><i class="fa fa-calendar"></i> Full Calendar Example</span>
+            <button
+              id="add-event"
+              type="button"
+              pButton
+              style="float: right; margin-right: 10px; margin-top: 8px;"
+              label="Add Event"
+              (click)="addEvent()"
+            ></button>
+          </div>
+          <div class="ui-g-12">
+            <hr />
+          </div>
+        </div>
+      </p-header>
+      <div>
+        <p-fullCalendar #fc [events]="events" [options]="options"></p-fullCalendar>
+        <p-overlayPanel #op>
+          <label>Title:{{ popOverTitle }}</label>
+        </p-overlayPanel>
+      </div>
+    </p-card>
+  </div>
+</div>

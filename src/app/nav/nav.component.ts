@@ -23,9 +23,13 @@ export class NavComponent implements OnInit {
         items: [
           {
             label: 'Card Panel',
-            routerLink: 'card-panel'
-          }
-        ]
+            routerLink: 'card-panel',
+          },
+          {
+            label: 'Full Calendar',
+            routerLink: 'calendar-example',
+          },
+        ],
       },
       {
         label: 'About',

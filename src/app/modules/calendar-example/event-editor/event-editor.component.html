@@ -1,0 +1,42 @@
+<div class="ui-g">
+  <div class="ui-g-12">
+    <!--Body-->
+    <div class="ui-g">
+      <div class="ui-g-4">
+        <div class="p-field">
+          <label for="start_date">Start Date</label>
+          <p-calendar name="start_date" appendTo="body" [showIcon]="true" [showTime]="true" [showButtonBar]="true" [(ngModel)]="startDate"></p-calendar>
+        </div>
+
+        <div class="p-field">
+          <label for="end_date">End Date</label>
+          <p-calendar name="end_date" appendTo="body" [showIcon]="true" [showTime]="true" [showButtonBar]="true" [(ngModel)]="endDate"></p-calendar>
+        </div>
+      </div>
+      <div class="ui-g-4 ui-fluid">
+        <div class="p-field">
+          <label for="event_title">Title</label>
+          <input name="event_title" id="event_title" pInputText type="text" [(ngModel)]="title" />
+        </div>
+      </div>
+      <div class="ui-g-4"></div>
+    </div>
+  </div>
+
+  <div class="ui-g-12">
+    <!--Footer separator.-->
+    <hr />
+  </div>
+  <div class="ui-g-12">
+    <!--Footer-->
+    <div class="ui-g">
+      <div class="ui-g-10"></div>
+      <div class="ui-g-1">
+        <button type="button" pButton label="Delete" (click)="delete()"></button>
+      </div>
+      <div class="ui-g-1">
+        <button type="button" pButton label="Save & Close" (click)="close()"></button>
+      </div>
+    </div>
+  </div>
+</div>
