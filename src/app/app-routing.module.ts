@@ -19,6 +19,10 @@ const routes: Routes = [
     loadChildren: () => import('./modules/calendar-example/calendar-example.module').then(m => m.CalendarExampleModule),
   },
   {
+    path: 'dialogs',
+    loadChildren: () => import('./modules/dialogs/dialogs.module').then(m => m.DialogsModule),
+  },
+  {
     path: '',
     redirectTo: 'welcome',
     pathMatch: 'full',

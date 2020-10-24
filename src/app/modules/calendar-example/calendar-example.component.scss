@@ -26,3 +26,11 @@ a.fc-day-grid-event {
 .fc-title {
   padding-left: 6px;
 }
+
+.fc {
+  .fc-toolbar {
+    .fc-button {
+      display: inline-block;
+    }
+  }
+}

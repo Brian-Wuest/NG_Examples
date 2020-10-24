@@ -1,7 +1,8 @@
-@import "./assets/theme-dark.scss";
-@import "./assets/layout-dark.scss";
-
 body {
+  height: 100%;
+  margin: 0px;
+  background: var(--surface-b);
+
   .ui-spinner.ui-widget.ui-corner-all {
     width: 100%;
   }

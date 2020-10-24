@@ -29,6 +29,10 @@ export class NavComponent implements OnInit {
             label: 'Full Calendar',
             routerLink: 'calendar-example',
           },
+          {
+            label: 'Dialogs',
+            routerLink: 'dialogs',
+          },
         ],
       },
       {

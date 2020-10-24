@@ -1,0 +1,66 @@
+<p-dialog
+  header="Form Entry"
+  [(visible)]="displayBasic"
+  [draggable]="false"
+  [resizable]="false"
+  [closeOnEscape]="false"
+  appendTo="body"
+  [focusTrap]="false"
+  [modal]="true"
+>
+  <div class="p-grid p-nogutter p-mx-3 p-my-3">
+    <div class="p-col-12">
+      <p-tabView orientation="bottom">
+        <p-tabPanel header="General">
+          <div class="p-fluid">
+            <div class="p-field">
+              <label for="code">Code:</label>
+              <input type="text" pInputText name="code" id="code" />
+            </div>
+
+            <div class="p-field">
+              <label for="firstName">First Name:</label>
+              <input type="text" pInputText name="firstName" id="firstName" />
+            </div>
+
+            <div class="p-field">
+              <label for="lastName">Last Name:</label>
+              <input type="text" pInputText name="lastName" id="lastName" />
+            </div>
+          </div>
+        </p-tabPanel>
+
+        <p-tabPanel header="Details">
+          <div class="p-fluid">
+            <div class="p-field">
+              <label for="nickName">Nick Name:</label>
+              <input type="text" pInputText name="nickName" id="nickName" />
+            </div>
+
+            <div class="p-field">
+              <label for="startDate">Start Date:</label>
+              <p-calendar [showIcon]="true" appendTo="body"></p-calendar>
+            </div>
+
+            <div class="p-field">
+              <label for="classification">Classification:</label>
+              <p-dropdown [options]="dropDownItems" [autoDisplayFirst]="false" [showClear]="true"></p-dropdown>
+            </div>
+          </div>
+        </p-tabPanel>
+      </p-tabView>
+    </div>
+  </div>
+  <ng-template pTemplate="footer">
+    <p-button icon="pi pi-check" (click)="displayBasic = false" label="Yes" styleClass="p-button-text"></p-button>
+  </ng-template>
+</p-dialog>
+
+<div class="p-grid p-nogutter p-mt-6">
+  <div class="p-col-3 p-offset-2">
+    <button pButton (click)="showDialog()" class="p-button-primary" label="Show Dialog"></button>
+  </div>
+  <div class="p-col-3 p-offset-2">
+    <button pButton (click)="showDynamicDialog()" class="p-button-primary" label="Show Dynamic Dialog"></button>
+  </div>
+</div>
