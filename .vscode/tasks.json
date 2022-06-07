@@ -1,0 +1,42 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "ng_serve",
+      "command": "ng serve --configuration=dev",
+      "isBackground": true,
+      "type": "shell",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [
+        {
+          "pattern": [
+            {
+              "regexp": ".",
+              "file": 1,
+              "location": 2,
+              "message": 3
+            }
+          ],
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": ".",
+            "endsPattern": "."
+          }
+        }
+      ]
+    },
+    {
+      "label": "end_serve",
+      "type": "shell",
+      "command": ["FOR /F \"tokens=1,2,3,4,5\" %A IN ('\"netstat -ano | findstr :4200 | findstr LISTENING\"') DO (TaskKill /PID %E /F)"],
+      "options": {
+        "shell": {
+          "executable": "cmd.exe",
+          "args": ["/d", "/c"]
+        }
+      }
+    }
+  ]
+}
