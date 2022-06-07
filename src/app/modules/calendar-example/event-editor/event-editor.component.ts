@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EventApi } from '@fullcalendar/core';
-import cloneDeep from 'lodash.clonedeep';
+import cloneDeep from 'lodash';
 import { DynamicDialogConfig, DynamicDialogRef } from 'primeng/dynamicdialog';
 import { ModifiedEventModel } from '../models/modified-event-model';
 
